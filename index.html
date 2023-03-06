@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <h1>SPLITTER</h1>
+
+  <main class="container">
+    
+    <div class="left">
+      
+      <div class="bill-input">
+        <h2>Bill</h2>
+      <input class="enter" id="bill-total" type="number" placeholder="&#36;" required>
+      </div>
+      
+      <div class="tip-select">
+        <h2>Select Tip %</h2>
+        <div class="grid-container">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <input class="custom" type="number" placeholder="Custom">
+        </div>
+      </div>
+      
+      <div class="people-selection">
+        <h2> Number of People</h2>
+        <input id="people-count" type="number" placeholder="Enter a value more than zero" required>
+      </div>
+    </div>
+
+    
+    <div class="right">
+      
+      <div class="tip-amount">
+        <div class="tip">
+          <h2>Tip Amount</h2>
+          <p>/ person</p>
+        </div>
+        <h2 class="final-tip">&#36;<span>0.00</span> </h2>
+      </div>
+      
+      <div class="total-amount">
+        <div class="total">
+          <h2>Total</h2>
+          <p>/ person</p>
+        </div>
+        <h2 class="final-amount">&#36;<span>0.00</span></h2>
+      </div>
+      <button class="reset">Reset</button>
+    </div>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
