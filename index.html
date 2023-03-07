@@ -12,11 +12,7 @@
   
   <title>Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+ 
 </head>
 <body>
 
@@ -44,7 +40,10 @@
       </div>
       
       <div class="people-selection">
-        <h2> Number of People</h2>
+        <div class="people-heading">
+          <h2> Number of People</h2> <span class="no-zero">Can't be less than 1</span>
+        </div>
+        
         <input id="people-count" type="number" placeholder="Enter a value more than zero" required>
       </div>
     </div>
@@ -57,7 +56,7 @@
           <h2>Tip Amount</h2>
           <p>/ person</p>
         </div>
-        <h2 class="final-tip">&#36;<span>0.00</span> </h2>
+        <h2 class="final-tip">&#36;<span class="tip-sum">0.00</span> </h2>
       </div>
       
       <div class="total-amount">
@@ -65,7 +64,7 @@
           <h2>Total</h2>
           <p>/ person</p>
         </div>
-        <h2 class="final-amount">&#36;<span>0.00</span></h2>
+        <h2 class="final-amount">&#36;<span class="cash-sum">0.00</span></h2>
       </div>
       <button class="reset">Reset</button>
     </div>
