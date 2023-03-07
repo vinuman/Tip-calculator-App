@@ -270,7 +270,7 @@ input[type=number]::-webkit-outer-spin-button {
 .reset{
     width:30rem;
     font-size: 2rem;
-   margin-left: 1rem;
+   margin-left: 0.5rem;
 }
 
 }
